@@ -217,6 +217,7 @@ function createPuzzle() {
         const piece = document.createElement("div");
 
         piece.classList.add("puzzle-piece");
+        piece.style.backgroundImage = 'url("IMAGES/puzzle-photo.jpeg")';
 
         piece.dataset.piece = pieceNumber;
 
@@ -337,7 +338,7 @@ function renderPuzzle() {
             document.createElement("div");
 
         piece.classList.add("puzzle-piece");
-
+piece.style.backgroundImage = 'url("IMAGES/puzzle-photo.jpeg")';
         piece.dataset.piece =
             pieceNumber;
 

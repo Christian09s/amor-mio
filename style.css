@@ -1613,3 +1613,90 @@ h1 {
         margin-left: 25px;
     }
 }
+/* =========================
+   MOBILE WELCOME SCREEN
+   ========================= */
+
+@media (max-width: 600px) {
+
+    .welcome {
+        padding: 40px 22px 35px;
+        min-height: 100svh;
+        box-sizing: border-box;
+    }
+
+    .welcome h1 {
+        font-size: clamp(2.8rem, 12vw, 4rem);
+        line-height: 1.05;
+        text-align: center;
+        white-space: nowrap;
+        position: relative;
+        z-index: 5;
+    }
+
+    .small-text {
+        font-size: 0.9rem;
+        max-width: 85%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .heart {
+        position: relative;
+        z-index: 5;
+    }
+
+    /* Top-right flowers */
+    .flower-branch {
+        width: 145px;
+        top: 80px;
+        right: -35px;
+        z-index: 2;
+    }
+
+    /* Bottom-left rose */
+    .flower-rose {
+        width: 125px;
+        left: -30px;
+        bottom: 30%;
+        z-index: 2;
+    }
+
+}
+@media (max-width: 600px) {
+
+    /* Make title fit comfortably on mobile */
+    .welcome h1 {
+        font-size: 2.25rem;
+        white-space: nowrap;
+        position: relative;
+        z-index: 5;
+    }
+
+    /* Move upper-right flowers away from title */
+    .flower-branch {
+        width: 125px;
+        top: 60px;
+        right: -25px;
+        z-index: 2;
+    }
+
+}
+@media (max-width: 420px) {
+
+    /* Red rose — below button, left side */
+    .flower-rose {
+        width: 105px;
+        left: 10px;
+        top: 650px;
+        bottom: auto;
+    }
+
+    /* White flowers — fully inside top-right */
+    .flower-branch {
+        width: 110px;
+        right: 5px;
+        top: 45px;
+        left: auto;
+    }
+}
